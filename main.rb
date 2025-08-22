@@ -11,6 +11,7 @@
 puts "Welcome to The Bank of Computer Soup. Please enter your alias:"
 name = gets.chomp
 
+loop do
 puts "Welcome #{name}. Please choose one of the options below (or don't):
 D - Deposit
 W - Withdrawal
@@ -51,11 +52,13 @@ else
   puts "you done messed up. what's wrong with you?"
 end
 
-
+puts "
+do you want to start again? Y/N?"
+restart_input = gets.chomp.capitalize
 
 else 
   puts "thanks and have a beautiful day"
-
+end
 
 # Advanced challenges:
 # 1. Modify code to stay on the application unless user selects an option to exit :

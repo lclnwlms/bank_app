@@ -30,7 +30,7 @@ if user_input == 'D'
   amount = gets.chomp.to_i
   if amount >0
     puts "thanks for the $#{amount}. mwahahaha!"
-    puts "your new balance is $#{balance + amount}"
+    puts "your new balance sneakers are $#{balance + amount}"
   else
     puts "why are you like this?"
   end
@@ -40,6 +40,7 @@ elsif user_input == 'W'
   amount = gets.chomp.to_i
   if amount <balance
     puts "spend that $#{amount} wisely now"
+    puts "your new balance sneakers are $#{balance - amount}"
   else amount >balance
     puts "nice try, buddy"
   end
@@ -49,6 +50,11 @@ elsif
 else
   puts "you done messed up. what's wrong with you?"
 end
+
+
+
+else 
+  puts "thanks and have a beautiful day"
 
 
 # Advanced challenges:

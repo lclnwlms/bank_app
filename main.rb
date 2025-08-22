@@ -30,7 +30,7 @@ if user_input == 'D'
   amount = gets.chomp.to_i
   if amount >0
     puts "thanks for the $#{amount}. mwahahaha!"
-    puts "your new balance sneakers are $#{balance} + $#{amount}"
+    puts "your new balance is $#{balance + amount}"
   else
     puts "why are you like this?"
   end

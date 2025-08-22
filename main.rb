@@ -65,6 +65,8 @@ restart_input = gets.chomp.capitalize
  end
 end
 
+puts "thank you and goodbye"
+
 # Advanced challenges:
 # 1. Modify code to stay on the application unless user selects an option to exit :
 # • Hint: Explore Loops

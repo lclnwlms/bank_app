@@ -59,13 +59,16 @@ puts "
 do you want to take it from the top? Y/N?"
 restart_input = gets.chomp.capitalize
 
- if restart_input == 'N'
+ if restart_input == 'Y'
+
+ elsif restart_input == 'N'
   puts "thanks and remember that money can't buy me love"
+
+ else puts "who do you think you are?"
   break
  end
 end
 
-puts "thank you and goodbye"
 
 # Advanced challenges:
 # 1. Modify code to stay on the application unless user selects an option to exit :

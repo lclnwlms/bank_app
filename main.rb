@@ -10,6 +10,7 @@
 
 puts "Welcome to The Bank of Computer Soup. Please enter your alias:"
 name = gets.chomp
+balance = 50
 
 loop do
 puts "Welcome #{name}. Please choose one of the options below (or don't):
@@ -18,7 +19,6 @@ W - Withdrawal
 B - Balance"
 
 user_input = gets.chomp.capitalize
-balance = 50
 
 # conditional statement: if/else logic (if, elsif, elsif, elsif & else)
 
@@ -30,18 +30,21 @@ if user_input == 'D'
   puts "how much you giving me?"
   amount = gets.chomp.to_i
   if amount >0
-    puts "thanks for the $#{amount}. mwahahaha!"
-    puts "your new balance sneakers are $#{balance + amount}"
+    balance += amount
+    puts "thanks for the $#{amount}, you idiot!"
+    puts "
+your new balance sneakers are $#{balance}"
   else
     puts "why are you like this?"
   end
-  # puts "your new balance is $#{balance} + $#{amount}"
 elsif user_input == 'W'
   puts "how much you after?"
   amount = gets.chomp.to_i
   if amount <balance
+    balance -= amount
     puts "spend that $#{amount} wisely now"
-    puts "your new balance sneakers are $#{balance - amount}"
+    puts "
+your new balance sneakers are $#{balance}"
   else amount >balance
     puts "nice try, buddy"
   end
@@ -53,16 +56,21 @@ else
 end
 
 puts "
-do you want to start again? Y/N?"
+do you want to take it from the top? Y/N?"
 restart_input = gets.chomp.capitalize
 
-else 
-  puts "thanks and have a beautiful day"
+ if restart_input == 'N'
+  puts "thanks and remember that money can't buy me love"
+  break
+ end
 end
 
 # Advanced challenges:
 # 1. Modify code to stay on the application unless user selects an option to exit :
 # • Hint: Explore Loops
+# loop do
+#   # code that repeats
+# end
 # 2. Work on the previous balance until you exit the app, instead of starting from 0:
 # • Hint : Explore Global Variables
 # 3. Persist the account balance and associate with a particular user and find ways of storing data, even after exiting the application

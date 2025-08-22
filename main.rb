@@ -61,7 +61,7 @@ do you want to take it from the top? Y/N?"
 restart_input = gets.chomp.capitalize
 
  if restart_input == 'Y'
-  
+  break
  elsif restart_input == 'N'
   puts "thanks and remember that money can't buy me love"
 break

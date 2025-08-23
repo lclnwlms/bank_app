@@ -55,21 +55,14 @@ else
   puts "you done messed up. what's wrong with you?"
 end
 
-  loop do
 puts "
 do you want to take it from the top? Y/N?"
 restart_input = gets.chomp.capitalize
 
- if restart_input == 'Y'
-  break
- elsif restart_input == 'N'
+ if restart_input == 'N'
   puts "thanks and remember that money can't buy me love"
-break
- else 
-   puts "who do you think you are?"
-  end
-end
-    break if restart_input == 'N' 
+  break
+ end
 end
 
 
